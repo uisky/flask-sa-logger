@@ -92,7 +92,7 @@ def init_logging(app):
             for sql, cnt in stat.items():
                 print('-' * w)
 
-                s_cnt = str(cnt)
+                s_cnt = '%4d' % cnt
                 if cnt >= 5:
                     s_cnt = colors.red(s_cnt)
                 elif cnt > 1:
@@ -100,7 +100,7 @@ def init_logging(app):
 
                 for i, line in enumerate(sql.split('\n')):
                     if i == 0:
-                        print('%4s | %s' % (s_cnt, line))
+                        print('%s | %s' % (s_cnt, line))
                     else:
                         print('     | %s' % (line, ))
 
