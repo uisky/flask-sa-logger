@@ -1,0 +1,4 @@
+sqlparse
+flask
+sqlalchemy
+ansicolors
