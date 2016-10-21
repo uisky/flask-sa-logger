@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='flask_sa_logger',
-    version='0.0.1',
+    version='0.0.2',
 
     description='Flask+SQLAlchemy logger & request counter',
     long_description=long_description,
